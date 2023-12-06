@@ -1,5 +1,6 @@
 package com.example.datasiswa.Halaman
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -9,14 +10,17 @@ import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.datasiswa.Model.HomeViewModel
 import com.example.datasiswa.Model.PenyediaViewModel.Factory
@@ -24,6 +28,7 @@ import com.example.datasiswa.Navigasi.DestinasiNavigasi
 import com.example.datasiswa.Navigasi.SiswaTopAppBar
 import com.example.datasiswa.R
 import com.example.datasiswa.R.string.app_name
+import com.example.datasiswa.data.Siswa
 
 object DestinasiHome : DestinasiNavigasi {
     override val route = "home"
@@ -70,3 +75,10 @@ fun HomeScreen(
         )
     }
 }
+@Composable
+fun BodyHome(
+    itemSiswa: List<Siswa>,
+    modifier: Modifier=Modifier){
+    Column (
+}
+
