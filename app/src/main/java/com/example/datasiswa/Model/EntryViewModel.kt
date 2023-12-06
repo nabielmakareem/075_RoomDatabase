@@ -10,7 +10,7 @@ import com.example.datasiswa.Repository.RepositoriSiswa
 import com.example.datasiswa.data.Siswa
 
 
-class EntryViewMode(private  val repositoriSiswa: RepositoriSiswa):ViewModel() {
+class EntryViewModel(private  val repositoriSiswa: RepositoriSiswa):ViewModel() {
     var uiStateSiswa by mutableStateOf(UIStateSiswa())
         private  set
     private fun validasiInput(uiState: DetailSiswa = uiStateSiswa.detailSiswa):Boolean{
