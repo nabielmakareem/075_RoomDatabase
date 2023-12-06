@@ -3,8 +3,9 @@ package com.example.datasiswa.Halaman
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.example.datasiswa.Model.EntryViewMode
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.datasiswa.Model.EntryViewModel
+import com.example.datasiswa.Model.PenyediaViewModel
 import com.example.datasiswa.Navigasi.DestinasiNavigasi
 import com.example.datasiswa.R.string.entry_siswa
 
@@ -20,4 +21,4 @@ fun EntrySiswaScreen(
     viewModel: EntryViewModel = viewModel(factory = PenyediaViewModel.Factory)
 ) {
 
-}  w
+}
