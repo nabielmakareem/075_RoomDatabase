@@ -1,5 +1,6 @@
 package com.example.datasiswa.Navigasi
 
+import HomeScreen
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -16,9 +17,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.datasiswa.Halaman.DestinasiEntry
-import com.example.datasiswa.Halaman.DestinasiHome
 import com.example.datasiswa.Halaman.EntrySiswaScreen
-import com.example.datasiswa.Halaman.HomeScreen
 import com.example.datasiswa.R
 
 @Composable
